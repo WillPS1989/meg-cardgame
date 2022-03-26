@@ -85,7 +85,7 @@
 
             if(hiLo!==null){
                 let currentCard = drawnCards[cardIndex-2];
-                if( (hiLo==='higher' && nextCard['num']<=currentCard) || (hiLo==='lower' && nextCard['num']>=currentCard) ){
+                if( (hiLo==='higher' && nextCard['num']<=currentCard['num']) || (hiLo==='lower' && nextCard['num']>=currentCard['num']) ){
                     losses++;
                     activeGame = false;
                     alert('Sorry, you lost!');
